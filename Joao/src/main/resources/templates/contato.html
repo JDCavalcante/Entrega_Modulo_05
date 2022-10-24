@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contato</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{/contato.css}">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+
+         <nav th:replace="~{frags/_navbar :: nav}"></nav>
+
+        <img src="Imagens/turismo-de-aventura.jpg" alt="">
+
+        <Section class="barra container-fluid">
+            <div class="box row text-white w-100 justify-content-center align-items-center text-center">
+              <div class="col-3 fs-3">
+                <h1 class="f ">CONTATE - NOS</h1>
+                <hr class="my-2 w-50"  style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+                <p class="lead">Entre em contato conosco!</p>
+              </div>
+            </div>
+          </Section>
+    </header>
+    
+    <div class= "bg-white container-fluid " style= "display: flex; justify-content: center; height: 600px;">
+        <div class="row" style=" background-color: #e6e4d7; z-index: 4; height: 100%; width: 60%; margin-top: -50px;" > 
+            <div class="row w-100">
+            <div class="col text-center">
+                <i  class="bi-geo-alt-fill rounded-circle" style="background-color:chartreuse;" ></i>
+                <h3>DEV TUR</h3>
+                <h4>FORTALEZA</h4>
+                <h4>CEARÁ</h4>
+                <h4 >BRASIL</h4>
+                <hr class=" w-50"  style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+            </div>
+            </div>
+            <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+                <form class="row g-3">
+                    <div class="col-12">
+                      <label for="inputName" class="form-label">Nome Completo</label>
+                      <input type="text" class="form-control" id="Nome" placeholder="">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Mensagem</label>
+                      <input type="text" class="form-control" id="Mensagem" placeholder="">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="Email">
+                      </div>
+                    <div class="col-12">
+                      <button type="submit" STYLE="background-color: chartreuse ;" class="btn">ENVIAR</button>
+                    </div>
+                  </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio do Footer -->
+    <footer class="text-center text-lg-start text-muted">
+
+        <!-- Inicio do Bloco 01-->
+        <section class="d-flex justify-content-center text-white justify-content-lg-between p-4"
+            style="background-color: #0d3040; border-bottom: 1px solid chartreuse">
+            <!--Inicio das Midias -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Conecte-se conosco nas redes sociais:</span>
+            </div>
+            <!--Fim das Midias -->
+
+            <!-- Inicio das Logos -->
+            <div>
+                <a href="https://www.facebook.com" class="btn-close-white me-4">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com" class="btn-close-white me-4">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.google.com" class="btn-close-white me-4">
+                    <i class="bi bi-google"></i>
+                </a>
+                <a href="https://www.instagram.com" class="btn-close-white me-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://br.linkedin.com" class="btn-close-white me-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com" class="btn-close-white me-4">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+
+            <!--Fim das Logos -->
+        </section>
+        <!--Fim do Bloco 01 -->
+
+        <!-- Inicio do Bloco 02-->
+        <section class="text-white" style="background-color: #0d3040 ;">
+            <div class="container text-center text-md-start mt-0">
+                <!--  row -->
+                <div class="row pt-5">
+                    <!-- col 01-->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>DEV TUR
+                        </h6>
+                        <hr class="mt-2 mb-3 w-100"
+                            style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+                        <p>
+                            Venha conhecer nossos maravilhosos destinos e criar novas memórias cheias de aventura,
+                            diversão e tudo o mais.
+                        </p>
+                    </div>
+                    <!-- col 01 -->
+
+                    <!-- col 02 -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            LINKS
+                        </h6>
+                        <hr class="mt-2 mb-3 w-100"
+                            style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+                        <p>
+                            <a href="#!" class="text-reset">Nossa Rotas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Passeios</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Aventuras</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Pacotes</a>
+                        </p>
+                    </div>
+                    <!-- col 02 -->
+
+                    <!-- col 03 -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            NEWS LETTER
+                        </h6>
+                        <hr class="mt-2 mb-3 w-100"
+                            style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+                        <p>Assine nossa newsletter semanal para receber notícias e atualizações</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span style="background-color: chartreuse; font-weight: bolder;"
+                                class=" w-auto input-group-text text-bolder" id="basic-addon2">@</span>
+                        </div>
+                    </div>
+                    <!-- col 03 -->
+
+                    <!-- col 04 -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contato
+                        </h6>
+                        <hr class="mt-2 mb-3 w-100"
+                            style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+                        <p><i class="bi bi-house me-3"></i> Fortaleza - CE</p>
+                        <p>
+                            <i class="bi bi-envelope me-3"></i>
+                            Dev-Tur@example.com
+                        </p>
+                        <p><i class="bi bi-phone me-3"></i> +55 85994247315</p>
+                        <p><i class="bi bi-phone me-3"></i> +55 85994247315</p>
+                    </div>
+                    <!-- col 04 -->
+                </div>
+                <!-- row -->
+            </div>
+        </section>
+        <!-- Fim do Bloco 02-->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href=""> João de Deus</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- Script Navbar -->
+    <script>
+        var nav = document.getElementById('nav');
+        window.addEventListener("scroll", function (event) {
+            if (window.pageYOffset > 50) {
+
+                nav.style.height = "70px";
+                nav.style.background = "#0d3040";
+                nav.style.fontSize = "12pt";
+
+
+            }
+            else {
+                nav.style.background = "#0d3040"
+                nav.style.height = "130px";
+                nav.style.fontSize = "15pt";
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

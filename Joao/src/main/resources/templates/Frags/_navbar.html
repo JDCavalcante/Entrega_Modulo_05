@@ -1,0 +1,57 @@
+<!-- Navbar -->
+
+  <nav th:fragment="nav" id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom overflow-hidden"
+      style="background-color:#0d3040; height: 130px; font-size:15pt ;">
+      <div class="container-fluid ">
+        <a class="navbar-brand " href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" th:href="@{/sobre}">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" th:href="@{/destino}">Destino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" th:href="@{/promocoes}">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" th:href="@{/contato}">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" th:href="@{/login}">
+					<i class="bi bi-person-circle"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+     <!-- Script Navbar -->
+  <script>
+    var nav = document.getElementById('nav');
+    window.addEventListener("scroll", function (event) {
+      if (window.pageYOffset > 50) {
+
+        nav.style.height = "70px";
+        nav.style.background = "#0d3040";
+        nav.style.fontSize = "12pt";
+
+
+      }
+      else {
+        nav.style.background = "#0d3040"
+        nav.style.height = "130px";
+        nav.style.fontSize = "15pt";
+      }
+    });
+    
+    
+  </script>

@@ -1,0 +1,270 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <title>Destinos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" th:href="@{/destino.css}">
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header class="overflow-hidden">
+
+    <nav th:replace="~{frags/_navbar :: nav}"></nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide text-bg-dark" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner text-white">
+        <div class="carousel-item active">
+          <img src="Imagens/jeri01.jpeg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item text-white">
+          <img src="Imagens/Jeri02.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item text-white">
+          <img src="Imagens/jeri03.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-dark ">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </header>
+
+  <nav>
+    <div class="nav nav-tabs str" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+        role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+        role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button"
+        role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+        <div class="col  ">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, aspernatur! Odio quia repellendus ut,
+            necessitatibus numquam rerum expedita at sunt laudantium esse nam explicabo, soluta, mollitia minima tenetur
+            voluptas ab.</p> 
+        </div>
+        <div class="col  ">
+          <ul style="border: 1px solid black; list-style: none;">
+            <li style="border-bottom: 1px solid black;">a</li>
+            <li style="border-bottom: 1px solid black;">b</li>
+            <li style="border-bottom: 1px solid black;">c</li>
+            <li style="border-bottom: 1px solid black;">d</li>
+            <li style="border-bottom: 1px solid black;"> e</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Exercitationem suscipit repellendus, adipisci animi labore iste reiciendis
+      architecto? Explicabo quaerat accusantium necessitatibus facere? Dignissimos, doloremque! Cum, provident! Ut
+      dolores facilis aliquam.</div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. At debitis fugiat esse a illo! Quas ipsum ea mollitia, voluptatibus, nam qui
+      dolore fugiat, itaque atque vel deserunt voluptatem officiis id.</div>
+  </div>
+  </div>
+
+  <!--Inicio do Footer -->
+  <footer class="text-center text-lg-start text-muted overflow-hidden">
+
+    <!-- Inicio do Bloco 01-->
+    <section class="d-flex justify-content-center text-white justify-content-lg-between p-4"
+      style="background-color: #0d3040; border-bottom: 1px solid chartreuse">
+      <!--Inicio das Midias -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Conecte-se conosco nas redes sociais:</span>
+      </div>
+      <!--Fim das Midias -->
+
+      <!-- Inicio das Logos -->
+      <div>
+        <a href="https://www.facebook.com" class="btn-close-white me-4">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com" class="btn-close-white me-4">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.google.com" class="btn-close-white me-4">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="https://www.instagram.com" class="btn-close-white me-4">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://br.linkedin.com" class="btn-close-white me-4">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com" class="btn-close-white me-4">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+
+      <!--Fim das Logos -->
+    </section>
+    <!--Fim do Bloco 01 -->
+
+    <!-- Inicio do Bloco 02-->
+    <section class="text-white" style="background-color: #0d3040 ;">
+      <div class="container text-center text-md-start mt-0">
+        <!--  row -->
+        <div class="row pt-5">
+          <!-- col 01-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>DEV TUR
+            </h6>
+            <hr class="mt-2 mb-3 w-100"
+              style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+            <p>
+              Venha conhecer nossos maravilhosos destinos e criar novas memórias cheias de aventura, diversão e tudo o
+              mais.
+            </p>
+          </div>
+          <!-- col 01 -->
+
+          <!-- col 02 -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              LINKS
+            </h6>
+            <hr class="mt-2 mb-3 w-100"
+              style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+            <p>
+              <a href="#!" class="text-reset">Nossa Rotas</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Passeios</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Aventuras</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pacotes</a>
+            </p>
+          </div>
+          <!-- col 02 -->
+
+          <!-- col 03 -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              NEWS LETTER
+            </h6>
+            <hr class="mt-2 mb-3 w-100"
+              style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+            <p>Assine nossa newsletter semanal para receber notícias e atualizações</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span style="background-color: chartreuse; font-weight: bolder;"
+                class=" w-auto input-group-text text-bolder" id="basic-addon2">@</span>
+            </div>
+          </div>
+          <!-- col 03 -->
+
+          <!-- col 04 -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contato
+            </h6>
+            <hr class="mt-2 mb-3 w-100"
+              style="margin:auto; box-sizing: border-box; border: 1px solid chartreuse; background-color: chartreuse ;">
+            <p><i class="bi bi-house me-3"></i> Fortaleza - CE</p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
+              Dev-Tur@example.com
+            </p>
+            <p><i class="bi bi-phone me-3"></i> +55 85994247315</p>
+            <p><i class="bi bi-phone me-3"></i> +55 85994247315</p>
+          </div>
+          <!-- col 04 -->
+        </div>
+        <!-- row -->
+      </div>
+    </section>
+    <!-- Fim do Bloco 02-->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href=""> João de Deus</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+  <!-- Script Navbar -->
+  <script>
+    var nav = document.getElementById('nav');
+    window.addEventListener("scroll", function (event) {
+      if (window.pageYOffset > 50) {
+
+        nav.style.height = "70px";
+        nav.style.background = "#0d3040";
+        nav.style.fontSize = "12pt";
+
+
+      }
+      else {
+        nav.style.background = "#0d3040"
+        nav.style.height = "130px";
+        nav.style.fontSize = "15pt";
+      }
+    });
+  </script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
